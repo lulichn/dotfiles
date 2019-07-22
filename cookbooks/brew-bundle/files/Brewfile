@@ -29,10 +29,10 @@ brew 'cuetools'
 
 # Lang
 ## + Go
-  brew 'go'
+  brew 'go@1.11'
   brew 'dep'
 ## + Node
-  brew 'node'
+  brew 'node@10'
   brew 'yarn'
 
 brew 'qemu'
