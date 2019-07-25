@@ -1,23 +1,67 @@
 include_role 'base'
 include_cookbook 'yay'
 
-package 'otf-ipafont'
-package 'adobe-source-han-sans-jp-fonts'
+# Package
+[
+  # Fonts
+  'otf-ipafont',
+  'adobe-source-han-sans-jp-fonts',
+  # 日本語入力
+  'fcitx-configtool',
+  'fcitx-im',
+  # Shell
+  'fasd',
+  # Development
+  'base-devel',
+  # Virtualization
+  'qemu',
+  'libvirt',
+  'virt-manager',
+  # Docker
+  'docker',
+].each do |name|
+  package name
+end
+
+# Aur
+[
+  # Fonts
+  'fcitx-mozc-neologd-ut',
+  # Shell
+  'peco',
+  'ghq',
+  # Applications
+  'google-chrome',
+  'slack-desktop',
+  'jetbrains-toolbox',
+  'visual-studio-code-bin',
+  'gpmdp',
+].each do |name|
+  yay name
+end
+
+dotfile '.xprofile'
+
 # .Xresources
 # URxvt.font: xft:Dejavu Sans Mono-9,xft:IPAGothic
 
-yay 'fcitx-mozc-neologd-ut'
-package 'fcitx-configtool'
-package 'fcitx-im'
-dotfile '.xprofile'
+# i3
 # exec --no-startup-id fcitx
-
+# bindsym $mod+F2 exec google-chrome-stable
 dotfile '.config/i3status'
 
-yay 'google-chrome'
-# bindsym $mod+F2 exec google-chrome-stable
-yay 'slack-desktop'
-yay 'jetbrains-toolbox'
-yay 'visual-studio-code-bin'
+dotfile '.gitconfig'
+dotfile '.config/git'
 
 include_cookbook 'zsh'
+
+service 'libvirtd' do
+  action [ :start, :enable ]
+end
+
+service 'docker' do
+  action [ :start, :enable ]
+end
+
+include_cookbook 'anyenv'
+
