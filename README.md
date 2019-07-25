@@ -7,3 +7,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/lulichn/dotfiles/master/in
 cd ~/dotfiles
 ./setup
 ```
+

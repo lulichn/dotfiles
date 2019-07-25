@@ -99,3 +99,8 @@ end
 defaults 'com.apple.screencapture name' do
   value "SS"
 end
+
+defaults 'com.apple.screencapture show-thumbnail' do
+  value false
+end
+
