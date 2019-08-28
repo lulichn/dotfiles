@@ -5,6 +5,7 @@ config/.zsh/.zcompcache/
 config/.zsh/.zinc/
 config/.zsh/prezto/
 config/.zsh/fasd
+config/.zsh/fasd.*
 
 
 config/.zsh/.zcompdump*
