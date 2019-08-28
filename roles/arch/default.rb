@@ -36,6 +36,7 @@ end
   'jetbrains-toolbox',
   'visual-studio-code-bin',
   'gpmdp',
+  'station',
 ].each do |name|
   yay name
 end
