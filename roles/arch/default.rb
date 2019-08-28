@@ -50,7 +50,7 @@ dotfile '.xprofile'
 # bindsym $mod+F2 exec google-chrome-stable
 dotfile '.config/i3status'
 
-dotfile '.config/git'
+include_cookbook 'git'
 
 include_cookbook 'zsh'
 

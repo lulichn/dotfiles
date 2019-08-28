@@ -6,4 +6,5 @@ define :make_alias, source: nil do
   end
 end
 
+dotfile '.config/git'
 make_alias 'git-d'

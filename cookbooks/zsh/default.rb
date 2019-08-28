@@ -1,24 +1,3 @@
-file "/etc/shells" do
-	user "root"
-	block do | content |
-		content.concat <<-EOS
-/usr/local/bin/zsh
-		EOS
-	end
-	action :nothing
-end
-
-execute "dummy" do
-	not_if "cat /etc/shells | grep -sq '/usr/local/bin/zsh'"
-	command ""
-	notifies :edit, 'file[/etc/shells]', :immediately
-end
-
-execute "chsh" do
-	not_if "[ $SHELL = '/usr/local/bin/zsh' ]"
-	command "chsh -s /usr/local/bin/zsh"
-end
-
 
 dotfile '.zsh'
 dotfile '.zshenv'
