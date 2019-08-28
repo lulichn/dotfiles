@@ -3,7 +3,7 @@ brew 'zsh'
 brew 'tmux'
 brew 'jq'        # JSON
 brew 'python-yq' # Yaml
-brew 'peco'
+brew 'fzf'
 brew 'ghq'
 brew 'graphviz'  # Graph Visualization
 

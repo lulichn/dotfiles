@@ -20,7 +20,7 @@ INSTANCES=$(eval $EC2_COMMAND)
 
 NAMES=$(echo $INSTANCES | jq -r '.Reservations | map(.Instances) | flatten | map({dns: .PublicDnsName, name: .Tags | (.[] | select (.Key == "Name") | .Value), key: .KeyName, launchAt: .LaunchTime})  | sort_by(.name) | .[] | "\(.name)\t\(.dns)\t\(.key)\t\(.launchAt)"')
 
-TARGET=$(echo $NAMES | peco)
+TARGET=$(echo $NAMES | fzf)
 
 if [ "$TARGET" = "" ]; then
   return

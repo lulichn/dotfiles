@@ -28,7 +28,6 @@ end
   # Fonts
   'fcitx-mozc-neologd-ut',
   # Shell
-  'peco',
   'ghq',
   # Applications
   'google-chrome',
@@ -51,7 +50,6 @@ dotfile '.xprofile'
 # bindsym $mod+F2 exec google-chrome-stable
 dotfile '.config/i3status'
 
-dotfile '.gitconfig'
 dotfile '.config/git'
 
 include_cookbook 'zsh'

@@ -1,6 +1,16 @@
 [user]
 	name = Daisuke HIGASHI
 	email = me@lulichn.net
+
+[alias]
+	b = branch
+	ba = branch --all
+	da = !git d | xargs git add --
+	dr = !git d | xargs git reset --
+
+[push]
+	default = current
+
 [ghq]
 	root = ~/dev/src
 

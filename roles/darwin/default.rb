@@ -5,4 +5,4 @@ include_cookbook 'brew-bundle'
 include_cookbook 'zsh'
 include_cookbook 'tmux'
 include_cookbook 'dotfiles'
-
+include_cookbook 'git'
