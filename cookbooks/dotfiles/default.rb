@@ -3,7 +3,6 @@ directory "#{ENV['HOME']}/.config" do
 end
 
 dotfile '.config/git'
-dotfile '.peco'
 dotfile '.tmux.conf'
 dotfile '.vimrc'
 dotfile '.config/karabiner'

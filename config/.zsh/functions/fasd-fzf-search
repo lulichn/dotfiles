@@ -1,10 +1,10 @@
-which peco fasd > /dev/null
+which fzf fasd > /dev/null
 if [ $? -ne 0 ]; then
-  echo "Please install peco and fasd"
+  echo "Please install fzf and fasd"
   return 1
 fi
 
-local res=$(fasd -ld | peco)
+local res=$(fasd -ld | fzf)
 if [ -n "$res" ]; then
   BUFFER+="cd $res"
   zle accept-line

@@ -12,9 +12,6 @@ fi
 
 function load-if-exists() { test -e "$1" && source "$1" }
 
-unsetopt promptcr
-unsetopt correct
-
 export HISTCONTROL=ignoreboth
 
 ############################################################
@@ -24,19 +21,24 @@ export _FASD_DATA=$ZDOTDIR/fasd
 
 ############################################################
 
+# fzf
+export FZF_DEFAULT_OPTS="--layout=reverse"
+
+############################################################
+
 # functions
 FPATH=$FPATH:$ZDOTDIR/functions
 autoload -U ssh-ec2
 
-# peco fasd
-autoload -U peco-fasd-search
-zle -N peco-fasd-search
-bindkey '^f' peco-fasd-search
+# fasd + fzf
+autoload -U fasd-fzf-search
+zle -N fasd-fzf-search
+bindkey '^f' fasd-fzf-search
 
-# peco ghq
-autoload -U peco-ghq
-zle -N peco-ghq
-bindkey '^q' peco-ghq
+# ghq + fzf
+autoload -U ghq-fzf
+zle -N ghq-fzf
+bindkey '^q' ghq-fzf
 
 ############################################################
 
