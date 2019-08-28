@@ -20,7 +20,7 @@ export HISTCONTROL=ignoreboth
 ############################################################
 
 # fasd
-_FASD_DATA=$ZDOTDIR/fasd
+export _FASD_DATA=$ZDOTDIR/fasd
 
 ############################################################
 
@@ -40,6 +40,18 @@ bindkey '^q' peco-ghq
 
 ############################################################
 
+# anyenv
+if [ -d $HOME/.anyenv ]; then
+  export PATH="$HOME/.anyenv/bin:$PATH"
+  eval "$(anyenv init -)"
+fi
+
+# sdkman
+export SDKMAN_DIR="$HOME/.sdkman"
+[ -d $SDKMAN_DIR ] && . "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+############################################################
+
 [ -f $ZDOTDIR/.zshrc_`uname` ] && . $ZDOTDIR/.zshrc_`uname`
 
 # config
@@ -47,9 +59,13 @@ for i in $ZDOTDIR/config/*.zsh; do
   source $i
 done
 
-for i in $HOME/works/.zsh/config/*.zsh; do
-  source $i
-done
+if [ -d $HOME/works/.zsh/config ]; then
+  for i in $HOME/works/.zsh/config/*.zsh; do
+    source $i
+  done
+fi
+
+############################################################
 
 ##
 ## Profiling
