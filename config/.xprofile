@@ -5,3 +5,5 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export DefaultIMModule=fcitx
 
+xset r rate 300 40
+

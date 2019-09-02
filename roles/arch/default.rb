@@ -19,6 +19,7 @@ include_cookbook 'yay'
   'virt-manager',
   # Docker
   'docker',
+  'docker-compose'
 ].each do |name|
   package name
 end
@@ -41,6 +42,7 @@ end
 end
 
 dotfile '.xprofile'
+dotfile '.Xmodmap'
 
 # .Xresources
 # URxvt.font: xft:Dejavu Sans Mono-9,xft:IPAGothic
