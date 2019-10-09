@@ -1,6 +1,7 @@
 # utilities
 brew 'zsh'
 brew 'tmux'
+brew 'tmux-xpanes'
 brew 'jq'        # JSON
 brew 'python-yq' # Yaml
 brew 'fzf'
@@ -8,6 +9,7 @@ brew 'ghq'
 brew 'graphviz'  # Graph Visualization
 
 # Development tools
+brew 'git'
 brew 'xz'
 brew 'nkf'
 brew 'openssl'
@@ -63,7 +65,6 @@ tap 'caskroom/cask'
   cask 'osxfuse'
   cask 'xquartz'
   cask 'qlmarkdown'
-  cask 'karabiner-elements'
   cask 'veracrypt'
   # Google
   cask 'google-chrome'
@@ -88,7 +89,6 @@ tap 'caskroom/cask'
 # Mac App Store
 brew 'mas'
   mas 'Alfred', id: 405843582
-  # mas 'Microsoft Remote Desktop 10', id: 1295203466
   mas 'TweetDeck', id: 485812721
   mas 'The Unarchiver', id: 425424353
   mas 'LINE', id: 539883307
