@@ -11,6 +11,7 @@ cask 'visual-studio-code'
 cask 'sourcetree'
 cask 'sequel-pro'
 cask 'paw'
+cask 'stoplight-studio'
 
 cask 'slack'
 cask 'skype'
