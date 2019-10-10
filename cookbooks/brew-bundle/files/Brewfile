@@ -1,15 +1,12 @@
-# utilities
-brew 'zsh'
+brew 'git'
 brew 'tmux'
 brew 'tmux-xpanes'
 brew 'jq'        # JSON
 brew 'python-yq' # Yaml
 brew 'fzf'
 brew 'ghq'
-brew 'graphviz'  # Graph Visualization
 
 # Development tools
-brew 'git'
 brew 'xz'
 brew 'nkf'
 brew 'openssl'
@@ -17,78 +14,40 @@ brew 'autoconf'
 brew 'automake'
 brew 'coreutils'
 
-brew 'redis'
-brew 'pkgdiff'
-brew 'rsync'
+brew 'graphviz'  # Graph Visualization
+
+# brew 'redis'
+# brew 'pkgdiff'
+# brew 'rsync'
 brew 'fn'
 
-brew 'youtube-dl'
-brew 'ffmpeg'
-brew 'flac'
-brew 'lame'
-brew 'shntool'
-brew 'cuetools'
-
 # Lang
-## + Go
-  brew 'go@1.11'
-  brew 'dep'
-## + Node
-  brew 'node@10'
-  brew 'yarn'
+## Go
+# brew 'go@1.11'
+# brew 'dep'
+
+## Node
+# brew 'node@10'
+# brew 'yarn'
 
 brew 'qemu'
 brew 'iperf'
 
-# Private
-  # flutter
-  brew 'libimobiledevice', args: ['HEAD']
-  brew 'ideviceinstaller'
-  brew 'ios-deploy'
-  brew 'cocoapods'
-  # nes
-  brew 'portaudio'
+# dev nes
+# brew 'portaudio'
 
 # Cloud management tools
-## + AWS
-  brew 'awscli'
-## + GCP
-  brew 'firebase-cli'
+## AWS
+brew 'awscli'
+## GCP
+# brew 'firebase-cli'
 
 # Provisioning
-  brew 'terraform'
-  brew 'packer'
-  brew 'ansible'
+brew 'terraform'
+brew 'packer'
+brew 'ansible'
   
 # Cask
-tap 'caskroom/cask'
-  cask 'osxfuse'
-  cask 'xquartz'
-  cask 'qlmarkdown'
-  cask 'veracrypt'
-  # Google
-  cask 'google-chrome'
-  cask 'google-japanese-ime'
-  cask 'google-drive-file-stream'
-  # Development
-  cask 'homebrew/cask-versions/docker-edge'
-  cask 'jetbrains-toolbox'
-  cask 'visual-studio-code'
-  cask 'sourcetree'
-  cask 'sequel-pro'
-  cask 'paw'
-  cask 'ngrok'
-  # Utilitiy
-  cask 'slack'
-  cask 'skype'
-  cask 'firefox'
-  cask 'vlc'
-  cask 'skitch'
-  cask 'boostnote'
+cask 'qlmarkdown'
+cask 'ngrok'
 
-# Mac App Store
-brew 'mas'
-  mas 'Alfred', id: 405843582
-  mas 'TweetDeck', id: 485812721
-  mas 'The Unarchiver', id: 425424353
-  mas 'LINE', id: 539883307

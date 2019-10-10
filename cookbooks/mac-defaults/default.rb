@@ -38,8 +38,8 @@ defaults 'com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture
 end
 
 defaults '-g com.apple.trackpad.scaling' do
-    value 2.5
-  end
+  value 2.5
+end
 
 defaults '-g com.apple.swipescrolldirection' do
   value false
@@ -104,3 +104,14 @@ defaults 'com.apple.screencapture show-thumbnail' do
   value false
 end
 
+
+# Siri
+defaults 'com.apple.Siri StatusMenuVisible' do
+  value false
+end
+defaults 'com.apple.Siri UserHasDeclinedEnable' do
+  value true
+end
+defaults 'com.apple.assistant.support \'Assistant Enabled\'' do
+  value false
+end

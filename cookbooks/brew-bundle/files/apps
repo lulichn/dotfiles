@@ -1,0 +1,26 @@
+# Google
+cask 'google-chrome'
+cask 'google-japanese-ime'
+cask 'google-drive-file-stream'
+
+# Development
+cask 'iterm2'
+cask 'homebrew/cask-versions/docker-edge'
+cask 'jetbrains-toolbox'
+cask 'visual-studio-code'
+cask 'sourcetree'
+cask 'sequel-pro'
+cask 'paw'
+
+cask 'slack'
+cask 'skype'
+cask 'firefox'
+cask 'vlc'
+cask 'skitch'
+cask 'boostnote'
+cask 'veracrypt'
+
+mas 'Alfred', id: 405843582
+mas 'TweetDeck', id: 485812721
+mas 'The Unarchiver', id: 425424353
+mas 'LINE', id: 539883307

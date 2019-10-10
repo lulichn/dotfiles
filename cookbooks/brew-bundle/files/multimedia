@@ -1,0 +1,7 @@
+brew 'youtube-dl'
+brew 'ffmpeg'
+brew 'flac'
+brew 'lame'
+brew 'shntool'
+brew 'cuetools'
+
