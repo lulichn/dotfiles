@@ -28,7 +28,7 @@ brew 'fn'
 
 ## Node
 # brew 'node@10'
-# brew 'yarn'
+brew 'yarn', args: [ 'ignore-dependencies' ]
 
 brew 'qemu'
 brew 'iperf'
