@@ -11,8 +11,11 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 # Path
-path=($HOME/bin(N-/) $path)
+path=(
+  $HOME/bin(N-/)
+  $path
+)
 
-[ -f $ZDOTDIR/.zshenv_`uname` ] && . $ZDOTDIR/.zshenv_`uname`
-[ -f $HOME/works/.zsh/zshenv_local ] && . $HOME/works/.zsh/zshenv_local
+[ -f $ZDOTDIR/.zshenv_`uname` ] && source $ZDOTDIR/.zshenv_`uname`
+[ -f $HOME/works/.zsh/zshenv_local ] && source $HOME/works/.zsh/zshenv_local
 

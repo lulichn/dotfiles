@@ -3,6 +3,9 @@
 #
 
 # Python, pip
-export PATH=$HOME/Library/Python/2.7/bin:$PATH
-export PATH=/usr/local/opt/node@10/bin:$PATH
-export PATH=/usr/local/opt/go@1.11/bin:$PATH
+path=(
+  $HOME/Library/Python/2.7/bin(N-/)
+  /usr/local/opt/node@10/bin(N-/)
+  /usr/local/opt/go@1.11/bin(N-/)
+  $path
+)
