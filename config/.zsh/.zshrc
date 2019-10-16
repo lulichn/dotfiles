@@ -48,6 +48,11 @@ if [ -d $HOME/.anyenv ]; then
   eval "$(anyenv init -)"
 fi
 
+# jabba
+if [ -d $HOME/.jabba ]; then
+  . $HOME/.jabba/jabba.sh
+fi
+
 # sdkman
 if [ -d $HOME/.sdkman ]; then
   export SDKMAN_DIR="$HOME/.sdkman"
