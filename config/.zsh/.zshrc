@@ -54,12 +54,14 @@ if [ -d $HOME/.jabba ]; then
 fi
 
 # sdkman
-export SDKMAN_DIR="$HOME/.sdkman"
-[ -d $SDKMAN_DIR ] && . "$SDKMAN_DIR/bin/sdkman-init.sh"
+if [ -d $HOME/.sdkman ]; then
+  export SDKMAN_DIR="$HOME/.sdkman"
+  source "$SDKMAN_DIR/bin/sdkman-init.sh"
+fi
 
 ############################################################
 
-[ -f $ZDOTDIR/.zshrc_`uname` ] && . $ZDOTDIR/.zshrc_`uname`
+[ -f $ZDOTDIR/.zshrc_`uname` ] && source $ZDOTDIR/.zshrc_`uname`
 
 # config
 for i in $ZDOTDIR/config/*.zsh; do

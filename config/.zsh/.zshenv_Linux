@@ -1,0 +1,5 @@
+
+path=(
+  /home/linuxbrew/.linuxbrew/bin(N-/)
+  $path
+)
