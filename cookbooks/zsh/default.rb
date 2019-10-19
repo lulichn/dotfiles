@@ -10,12 +10,12 @@ end
 
 # Zsh configuration
 %w[
-zlogin
-zlogout
+  zlogin
+  zlogout
 ].each do |cfg|
-	link File.join(ENV['HOME'], ".zsh/", "." << cfg) do
-		to File.join(ENV['HOME'], ".zsh/prezto/runcoms", cfg)
-		user node[:user]
-	end
+  link File.join(ENV['HOME'], ".zsh/", "." << cfg) do
+	to File.join(ENV['HOME'], ".zsh/prezto/runcoms", cfg)
+	user node[:user]
+  end
 end
 

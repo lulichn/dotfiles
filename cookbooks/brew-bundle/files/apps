@@ -13,6 +13,7 @@ cask 'sequel-pro'
 cask 'paw'
 cask 'stoplight-studio'
 
+cask 'alfred'
 cask 'slack'
 cask 'skype'
 cask 'firefox'
@@ -21,7 +22,6 @@ cask 'skitch'
 cask 'boostnote'
 cask 'veracrypt'
 
-mas 'Alfred', id: 405843582
 mas 'TweetDeck', id: 485812721
 mas 'The Unarchiver', id: 425424353
 mas 'LINE', id: 539883307

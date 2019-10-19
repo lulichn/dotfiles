@@ -15,6 +15,25 @@ end
 defaults '-g InitialKeyRepeat' do
   value 15
 end
+## Move focus to the next window in application - Option + Tab
+# plist 'Disable Spotlight hotkey' do
+#   file '~/Library/Preferences/com.apple.symbolichotkeys.plist'
+#   key ':AppleSymbolicHotKeys:27:value:parameters'
+#   value {65535, 48, 524288}
+# end
+
+## ショートカット Spotlight を無効
+## https://apple.stackexchange.com/questions/91679/is-there-a-way-to-set-an-application-shortcut-in-the-keyboard-preference-pane-vi
+plist 'Disable Spotlight hotkey' do
+  file '~/Library/Preferences/com.apple.symbolichotkeys.plist'
+  key ':AppleSymbolicHotKeys:64:enabled'
+  value false
+end
+plist 'Disable Spotlight hotkey' do
+  file '~/Library/Preferences/com.apple.symbolichotkeys.plist'
+  key ':AppleSymbolicHotKeys:65:enabled'
+  value false
+end
 
 #
 # Trackpad
@@ -77,6 +96,18 @@ end
 
 defaults 'com.apple.finder ShowPathbar' do
   value true
+end
+
+plist 'Desktop Grid spacing' do
+  file '~/Library/Preferences/com.apple.finder.plist'
+  key ':DesktopViewSettings:IconViewSettings:gridSpacing'
+  value '42'
+end
+
+plist 'Desktop Icon size' do
+  file '~/Library/Preferences/com.apple.finder.plist'
+  key ':DesktopViewSettings:IconViewSettings:iconSize'
+  value '44'
 end
 
 ## Avoid creating .DS_Store files on network volumes

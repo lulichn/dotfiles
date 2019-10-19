@@ -1,7 +1,10 @@
-brew 'youtube-dl'
-brew 'ffmpeg'
-brew 'flac'
-brew 'lame'
-brew 'shntool'
-brew 'cuetools'
+#cask 'calibre'
+cask 'yacreader'
+
+#brew 'youtube-dl'
+#brew 'ffmpeg'
+#brew 'flac'
+#brew 'lame'
+#brew 'shntool'
+#brew 'cuetools'
 

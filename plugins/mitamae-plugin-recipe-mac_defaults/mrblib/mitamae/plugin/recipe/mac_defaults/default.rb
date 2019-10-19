@@ -1,3 +1,5 @@
+
+
 define :defaults, host: nil, action: :write, value: nil do
   host = case params[:host]
     when :currentHost then "-currentHost"
@@ -31,5 +33,24 @@ define :defaults, host: nil, action: :write, value: nil do
       when TrueClass, FalseClass then "boolean"
     end
     execute "defaults #{host} write #{params[:name]} -#{type} #{params[:value]}" {}
+  end
+end
+
+define :plist, title: nil, file: nil, key: nil, value: nil do
+  def compare(expected, actual)
+    return case expected
+      when String                then expected == actual
+      when Integer               then expected == actual.to_i
+      when Float                 then expected == actual.to_f
+      when TrueClass, FalseClass then expected == (actual == 'true') 
+    end
+  end
+
+  readValue = run_command("/usr/libexec/PlistBuddy -c \'print #{params[:key]}\' #{params[:file]}", error: false)
+  if readValue.success?
+    currentValue = readValue.stdout.chomp
+    unless compare(params[:value], currentValue) then
+      execute "/usr/libexec/PlistBuddy -c \'set #{params[:key]} #{params[:value]}\' #{params[:file]}" {}
+    end
   end
 end

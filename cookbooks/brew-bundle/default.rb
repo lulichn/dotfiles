@@ -1,7 +1,8 @@
-[
-  'base',
-  'apps',
-  'brewfile'
+%w[
+  base
+  apps
+  brewfile
+  multimedia
 ].each do |file|
   execute 'brew bundle' do
     command <<-"EOF"
