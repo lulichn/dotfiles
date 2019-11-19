@@ -59,6 +59,11 @@ if [ -d $HOME/.sdkman ]; then
   source "$SDKMAN_DIR/bin/sdkman-init.sh"
 fi
 
+# Cargo
+if [ -d $HOME/.cargo ]; then
+  source $HOME/.cargo/env
+fi
+
 ############################################################
 
 [ -f $ZDOTDIR/.zshrc_`uname` ] && source $ZDOTDIR/.zshrc_`uname`

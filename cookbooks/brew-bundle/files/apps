@@ -9,7 +9,7 @@ cask 'homebrew/cask-versions/docker-edge'
 cask 'jetbrains-toolbox'
 cask 'visual-studio-code'
 cask 'sourcetree'
-cask 'sequel-pro'
+cask 'sequel-pro-nightly'
 cask 'paw'
 cask 'stoplight-studio'
 
