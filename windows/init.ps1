@@ -6,6 +6,7 @@ $packageList = @(
   'jetbrainstoolbox',
   'slack',
   'google-drive-file-stream',
-  'SourceTree'
+  'SourceTree',
+  'zeal'
 )
 $packageList | %{Install-Package -Force -Name $_ -Provider ChocolateyGet}
