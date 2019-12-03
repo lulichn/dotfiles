@@ -73,12 +73,6 @@ for i in $ZDOTDIR/config/*.zsh; do
   source $i
 done
 
-if [ -d $HOME/works/.zsh/config ]; then
-  for i in $HOME/works/.zsh/config/*.zsh; do
-    source $i
-  done
-fi
-
 ############################################################
 
 ##

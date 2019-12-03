@@ -12,4 +12,4 @@ config/.zsh/.zcompdump*
 config/.zsh/.zlogin
 config/.zsh/.zlogout
 config/.zsh/.zhistory
-
+config/.zsh/.zsh_history
