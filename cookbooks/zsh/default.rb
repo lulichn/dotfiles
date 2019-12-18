@@ -1,11 +1,13 @@
 
+package 'zsh'
+
 dotfile '.zsh'
 dotfile '.zshenv'
 
 # Prezto
 git "#{ENV['HOME']}/.zsh/prezto" do
-	repository "https://github.com/sorin-ionescu/prezto.git"
-	recursive true
+  repository "https://github.com/sorin-ionescu/prezto.git"
+  recursive true
 end
 
 # Zsh configuration
@@ -14,8 +16,8 @@ end
   zlogout
 ].each do |cfg|
   link File.join(ENV['HOME'], ".zsh/", "." << cfg) do
-	to File.join(ENV['HOME'], ".zsh/prezto/runcoms", cfg)
-	user node[:user]
+    to File.join(ENV['HOME'], ".zsh/prezto/runcoms", cfg)
+    user node[:user]
   end
 end
 

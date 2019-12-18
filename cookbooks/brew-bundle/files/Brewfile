@@ -15,6 +15,7 @@ brew 'automake'
 brew 'coreutils'
 
 brew 'graphviz'  # Graph Visualization
+brew 'watchman'  # watching changes in the filesystem
 
 # brew 'redis'
 # brew 'pkgdiff'
