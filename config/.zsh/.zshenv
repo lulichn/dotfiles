@@ -13,6 +13,8 @@ fi
 # Path
 path=(
   $HOME/bin(N-/)
+  $HOME/.yarn/bin(N-/)
+  $HOME/.config/yarn/global/node_modules/.bin(N-/)
   $path
 )
 

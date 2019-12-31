@@ -17,6 +17,7 @@ brew 'coreutils'
 brew 'graphviz'  # Graph Visualization
 brew 'watchman'  # watching changes in the filesystem
 
+brew 'postgres'
 # brew 'redis'
 # brew 'pkgdiff'
 # brew 'rsync'
@@ -28,8 +29,7 @@ brew 'fn'
 # brew 'dep'
 
 ## Node
-# brew 'node@10'
-brew 'yarn', args: [ 'ignore-dependencies' ]
+#brew 'yarn', args: [ 'ignore-dependencies' ]
 
 brew 'qemu'
 brew 'iperf'
