@@ -30,6 +30,7 @@ brew 'fn'
 
 ## Node
 #brew 'yarn', args: [ 'ignore-dependencies' ]
+brew 'deno' # https://deno.land/
 
 brew 'qemu'
 brew 'iperf'

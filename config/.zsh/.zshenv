@@ -15,6 +15,7 @@ path=(
   $HOME/bin(N-/)
   $HOME/.yarn/bin(N-/)
   $HOME/.config/yarn/global/node_modules/.bin(N-/)
+  $HOME/bin/flutter/bin(N-/)
   $path
 )
 

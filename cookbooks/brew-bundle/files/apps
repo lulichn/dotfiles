@@ -12,6 +12,7 @@ cask 'sourcetree'
 cask 'sequel-pro-nightly'
 cask 'paw'
 cask 'stoplight-studio'
+cask 'fork'
 
 cask 'alfred'
 cask 'slack'
