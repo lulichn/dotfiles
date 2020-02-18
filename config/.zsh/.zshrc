@@ -64,6 +64,17 @@ if [ -d $HOME/.cargo ]; then
   source $HOME/.cargo/env
 fi
 
+# android sdk
+if [ -d $HOME/Library/Android/sdk ]; then
+  export ANDROID_HOME=$HOME/Library/Android/sdk
+  path=(
+    $ANDROID_HOME/tools
+    $ANDROID_HOME/tools/bin
+    $ANDROID_HOME/platform-tools
+    $path
+  )
+fi
+
 ############################################################
 
 [ -f $ZDOTDIR/.zshrc_`uname` ] && source $ZDOTDIR/.zshrc_`uname`
