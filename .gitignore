@@ -1,6 +1,8 @@
 
 bin/mitamae*
 
+cookbooks/brew-bundle/files/*.lock.json
+
 config/.zsh/.zcompcache/
 config/.zsh/.zinc/
 config/.zsh/prezto/

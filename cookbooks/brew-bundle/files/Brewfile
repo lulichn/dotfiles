@@ -50,6 +50,5 @@ brew 'packer'
 brew 'ansible'
   
 # Cask
-cask 'qlmarkdown'
 cask 'ngrok'
 
