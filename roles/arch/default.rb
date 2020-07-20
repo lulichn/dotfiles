@@ -34,9 +34,7 @@ end
   'google-chrome',
   'slack-desktop',
   'jetbrains-toolbox',
-  'visual-studio-code-bin',
-  'gpmdp',
-  'station',
+  'visual-studio-code-bin'
 ].each do |name|
   yay name
 end
