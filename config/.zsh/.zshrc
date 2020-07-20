@@ -45,7 +45,7 @@ bindkey '^q' ghq-fzf
 # anyenv
 if [ -d $HOME/.anyenv ]; then
   export PATH="$HOME/.anyenv/bin:$PATH"
-  eval "$(anyenv init -)"
+  eval "$(anyenv init - --no-rehash)"
 fi
 
 # jabba
@@ -63,6 +63,9 @@ fi
 if [ -d $HOME/.cargo ]; then
   source $HOME/.cargo/env
 fi
+
+# OCaml
+(($+commands[opam])) && eval $(opam env)
 
 # android sdk
 if [ -d $HOME/Library/Android/sdk ]; then
