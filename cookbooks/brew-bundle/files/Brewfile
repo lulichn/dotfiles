@@ -1,54 +1,70 @@
+brew 'zsh'
 brew 'git'
+brew 'git-lfs'
 brew 'tmux'
 brew 'tmux-xpanes'
 brew 'jq'        # JSON
 brew 'python-yq' # Yaml
-brew 'fzf'
+brew 'fzf'       # command-line fuzzy finder
 brew 'ghq'
+brew 'xz'        # Compress or decompress
+brew 'nkf'       # Network Kanji Filter
+# brew 'graphviz'  # Graph Visualization
+# brew 'watchman'  # Watching changes in the filesystem
 
-# Development tools
-brew 'xz'
-brew 'nkf'
 brew 'openssl'
 brew 'autoconf'
 brew 'automake'
 brew 'coreutils'
 
-brew 'graphviz'  # Graph Visualization
-brew 'watchman'  # watching changes in the filesystem
-
-brew 'postgres'
-# brew 'redis'
-# brew 'pkgdiff'
-# brew 'rsync'
-brew 'fn'
-
-# Lang
-## Go
-# brew 'go@1.11'
-# brew 'dep'
-
-## Node
-#brew 'yarn', args: [ 'ignore-dependencies' ]
-brew 'deno' # https://deno.land/
-
 brew 'qemu'
-brew 'iperf'
-
-# dev nes
-# brew 'portaudio'
+# brew 'iperf'
+# brew 'iperf3'
+brew 'htop'
 
 # Cloud management tools
-## AWS
 brew 'awscli'
-## GCP
-# brew 'firebase-cli'
 
-# Provisioning
-brew 'terraform'
-brew 'packer'
-brew 'ansible'
-  
+# React Native
+brew 'cocoapods'
+tap 'facebook/fb'
+brew 'idb-companion'
+
+# Multimedia
+brew 'youtube-dl'
+brew 'ffmpeg'
+# brew 'flac'
+# brew 'lame'
+# brew 'shntool'
+# brew 'cuetools'
+# cask 'calibre'
+# cask 'yacreader'
+
 # Cask
+cask 'osxfuse'
+cask 'xquartz'
+cask 'google-chrome'
+cask 'google-japanese-ime'
+cask 'google-drive-file-stream'
+cask 'iterm2'
+cask 'alfred'
 cask 'ngrok'
+cask 'paw'
+cask 'fork'
+cask 'slack'
+cask 'jetbrains-toolbox'
+cask 'visual-studio-code'
+cask 'docker-edge'
+cask 'sequel-pro-nightly'
+cask 'veracrypt'
+cask 'firefox'
+cask 'notion'
+cask 'vlc'
 
+# App Store
+brew 'mas'
+mas 'Magnet', id: 441258766
+mas 'TweetDeck', id: 485812721
+mas 'The Unarchiver', id: 425424353
+mas 'LINE', id: 539883307
+mas 'ZIPANG', id: 882655968
