@@ -26,7 +26,6 @@ brew 'htop'
 brew 'awscli'
 
 # React Native
-brew 'cocoapods'
 tap 'facebook/fb'
 brew 'idb-companion'
 
@@ -53,7 +52,7 @@ cask 'paw'
 cask 'fork'
 cask 'slack'
 cask 'jetbrains-toolbox'
-cask 'visual-studio-code'
+cask 'visual-studio-code-insiders'
 cask 'docker-edge'
 cask 'sequel-pro-nightly'
 cask 'veracrypt'

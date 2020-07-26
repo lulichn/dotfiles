@@ -3,24 +3,31 @@
 repo_url="https://github.com/lulichn/dotfiles.git"
 dest="$HOME/dotfiles"
 
-function check_and_install_brew() {
-	if !(type brew > /dev/null 2>&1); then
-		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+function check_and_install_xcode() {
+	if (xcode-select -p > /dev/null; test $? -ne 0); then
+		xcode-select --install
 	fi
 }
 
-if [ -d $dest ]; then
-	cd $dest
-	git fetch
-	git reset --hard origin/master
-else
-	git clone $repo_url $dest
-	cd $dest
-fi
+function clone() {
+	if [ -d $dest ]; then
+		cd $dest
+		git fetch
+		git reset --hard origin/master
+	else
+		git clone $repo_url $dest
+		cd $dest
+	fi
+}
 
 case "$(uname)" in
-	"Darwin") check_and_install_brew;;
-	*) ;;
+	"Darwin")
+	check_and_install_xcode
+	clone
+	;;
+	*)
+	clone
+	;;
 esac
 
-bin/setup install
+# bin/setup install

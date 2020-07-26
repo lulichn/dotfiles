@@ -2,13 +2,7 @@
 .DEFAULT_GOAL := help
 
 
-install: install-xcode install-brew install-mitamae ##
-
-.PHONY:	install-xcode
-install-xcode:
-ifeq ($(shell xcode-select -p 2> /dev/null),)
-	xcode-select --install
-endif
+install: install-brew install-mitamae ## Install
 
 .PHONY:	install-brew
 install-brew: ## Install homebrew
@@ -21,6 +15,25 @@ endif
 .PHONY:	install-mitamae
 install-mitamae: ## Install Mitamae
 	./bin/setup install
+
+.PHONY: setup
+setup: ## Setup
+	./bin/mitamae local ./lib/bootstrap.rb
+
+.PHONY:	brew
+brew: brew-upgrade brew-bundle ## Brew
+
+.PHONY:	brew-upgrade
+brew-upgrade: ## Upgrade formula
+	brew upgrade
+
+.PHONY:	brew-bundle
+brew-bundle: ## Bundle install
+	./bin/mitamae local ./cookbooks/brew-bundle/default.rb
+
+.PHONY:	backup
+backup:
+	./backup/dump.sh
 
 .PHONY:	help
 help:

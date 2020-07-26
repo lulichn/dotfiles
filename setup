@@ -1,8 +1,0 @@
-#!/bin/sh
-set -eu
-
-case "$(uname)" in
-  "Darwin")  ./bin/mitamae local $@ ./lib/bootstrap.rb ;;
-  *) sudo -E env HOME=$HOME ./bin/mitamae local $@ ./lib/bootstrap.rb ;;
-esac
-
