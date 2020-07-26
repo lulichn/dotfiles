@@ -14,3 +14,7 @@ if (( $+commands[docker] )); then
   alias ddexec='docker exec -it `ddps | fzf | cut -f 1` /bin/bash'
 fi
 
+# VSCode
+if (( $+commands[code-insiders] )); then
+  alias code='code-insiders'
+fi

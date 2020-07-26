@@ -52,7 +52,7 @@ cask 'paw'
 cask 'fork'
 cask 'slack'
 cask 'jetbrains-toolbox'
-cask 'visual-studio-code-insiders'
+cask 'homebrew/cask-versions/visual-studio-code-insiders'
 cask 'docker-edge'
 cask 'sequel-pro-nightly'
 cask 'veracrypt'
@@ -62,6 +62,7 @@ cask 'vlc'
 
 # App Store
 brew 'mas'
+mas 'Xcode', id: 497799835
 mas 'Magnet', id: 441258766
 mas 'TweetDeck', id: 485812721
 mas 'The Unarchiver', id: 425424353

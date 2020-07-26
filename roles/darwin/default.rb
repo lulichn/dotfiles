@@ -8,5 +8,4 @@ include_cookbook 'dotfiles'
 include_cookbook 'git'
 
 include_cookbook 'anyenv'
-include_cookbook 'java'
 
