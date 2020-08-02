@@ -48,11 +48,6 @@ if [ -d $HOME/.anyenv ]; then
   eval "$(anyenv init - --no-rehash)"
 fi
 
-# jabba
-if [ -d $HOME/.jabba ]; then
-  . $HOME/.jabba/jabba.sh
-fi
-
 # sdkman
 if [ -d $HOME/.sdkman ]; then
   export SDKMAN_DIR="$HOME/.sdkman"
@@ -71,6 +66,7 @@ fi
 if [ -d $HOME/Library/Android/sdk ]; then
   export ANDROID_HOME=$HOME/Library/Android/sdk
   path=(
+    $ANDROID_HOME/emulator
     $ANDROID_HOME/tools
     $ANDROID_HOME/tools/bin
     $ANDROID_HOME/platform-tools

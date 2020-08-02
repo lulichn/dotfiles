@@ -5,7 +5,5 @@
 # Python, pip
 path=(
   $HOME/Library/Python/2.7/bin(N-/)
-  /usr/local/opt/node@10/bin(N-/)
-  /usr/local/opt/go@1.11/bin(N-/)
   $path
 )

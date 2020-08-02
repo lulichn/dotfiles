@@ -25,6 +25,9 @@ brew 'htop'
 # Cloud management tools
 brew 'awscli'
 
+# Rails
+brew 'postgresql'
+
 # React Native
 tap 'facebook/fb'
 brew 'idb-companion'
@@ -40,25 +43,33 @@ brew 'ffmpeg'
 # cask 'yacreader'
 
 # Cask
-cask 'osxfuse'
-cask 'xquartz'
-cask 'google-chrome'
-cask 'google-japanese-ime'
-cask 'google-drive-file-stream'
-cask 'iterm2'
 cask 'alfred'
-cask 'ngrok'
-cask 'paw'
-cask 'fork'
-cask 'slack'
-cask 'jetbrains-toolbox'
-cask 'homebrew/cask-versions/visual-studio-code-insiders'
+cask 'authy'
 cask 'docker-edge'
-cask 'sequel-pro-nightly'
-cask 'veracrypt'
 cask 'firefox'
+cask 'flipper'
+cask 'fork'
+cask 'google-chrome'
+cask 'google-drive-file-stream'
+cask 'google-japanese-ime'
+cask 'homebrew/cask-versions/visual-studio-code-insiders'
+cask 'iterm2'
+cask 'jetbrains-toolbox'
+cask 'kindle'
+cask 'ngrok'
 cask 'notion'
+cask 'osxfuse'
+cask 'paw'
+cask 'reactotron'
+cask 'rescuetime'
+cask 'sequel-pro-nightly'
+cask 'slack'
+cask 'teamviewer'
+cask 'veracrypt'
 cask 'vlc'
+cask 'xquartz'
+cask 'yacreader'
+cask 'zoomus'
 
 # App Store
 brew 'mas'
@@ -68,3 +79,6 @@ mas 'TweetDeck', id: 485812721
 mas 'The Unarchiver', id: 425424353
 mas 'LINE', id: 539883307
 mas 'ZIPANG', id: 882655968
+mas 'Microsoft Excel', id: 462058435
+mas 'Microsoft Word', id: 462054704
+mas 'Microsoft PowerPoint', id: 462062816
