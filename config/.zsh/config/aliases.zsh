@@ -13,8 +13,3 @@ if (( $+commands[docker] )); then
   alias ddvolume='docker volume ls -qf dangling=true | xargs docker volume rm'
   alias ddexec='docker exec -it `ddps | fzf | cut -f 1` /bin/bash'
 fi
-
-# VSCode
-if (( $+commands[code-insiders] )); then
-  alias code='code-insiders'
-fi
