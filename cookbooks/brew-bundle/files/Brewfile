@@ -62,6 +62,7 @@ cask 'reactotron'
 # cask 'rescuetime'
 cask 'sequel-pro-nightly'
 cask 'slack'
+cask 'tableplus'
 # cask 'teamviewer'
 # cask 'tunnelblick'
 cask 'veracrypt'
@@ -73,12 +74,15 @@ cask 'zoom'
 
 # App Store
 brew 'mas'
-mas 'Xcode', id: 497799835
-mas 'Magnet', id: 441258766
-mas 'TweetDeck', id: 485812721
-mas 'The Unarchiver', id: 425424353
+mas 'Bitwarden', id: 1352778147
 mas 'LINE', id: 539883307
-mas 'ZIPANG', id: 882655968
-mas 'Microsoft Excel', id: 462058435
+mas 'Magnet', id: 441258766
 mas 'Microsoft Word', id: 462054704
+mas 'Microsoft Excel', id: 462058435
 mas 'Microsoft PowerPoint', id: 462062816
+mas 'Microsoft OneNote', id: 784801555
+mas 'tailscale', id: 1475387142
+mas 'The Unarchiver', id: 425424353
+mas 'TweetDeck', id: 485812721
+mas 'Xcode', id: 497799835
+mas 'ZIPANG', id: 882655968
