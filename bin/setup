@@ -28,8 +28,12 @@ EOF
 get_bin()
 {
 	uname=$(uname)
-	if [ "$uname" = "Darwin" ]; then
+	arch=$(uname -m)
+
+	if [ "$uname" = "Darwin" -a "$arch" = "x86_64" ]; then
 		bin="mitamae-x86_64-darwin"
+	elif [ "$uname" = "Darwin" -a "$arch" = "arm64" ]; then
+		bin="mitamae-aarch64-darwin"
 	elif [ "$uname" = "Linux" ]; then
 		bin="mitamae-x86_64-linux"
 	fi
