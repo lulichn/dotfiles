@@ -1,7 +1,7 @@
 include_role 'base'
 
-include_cookbook 'brew'
 include_cookbook 'zsh'
+include_cookbook 'brew'
 # include_cookbook 'mac-defaults'
 # include_cookbook 'brew-bundle'
 # include_cookbook 'tmux'

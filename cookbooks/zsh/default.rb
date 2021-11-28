@@ -1,6 +1,3 @@
-
-package 'zsh'
-
 dotfile '.zsh'
 dotfile '.zshenv'
 

@@ -63,7 +63,7 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 # Homebrew
-if [ -d /opt/homebrew/bin/brew ]; then
+if [ -x /opt/homebrew/bin/brew ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 

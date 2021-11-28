@@ -1,12 +1,6 @@
-brew 'anyenv'
-# brew 'autoconf'
-# brew 'automake'
 brew 'awscli'
-# brew 'coreutils'
-# brew 'cuetools'
 brew 'deno'
 brew 'ffmpeg'
-# brew 'flac'
 brew 'fzf'       # command-line fuzzy finder
 brew 'ghq'
 brew 'git'
@@ -16,59 +10,36 @@ brew 'htop'
 # brew 'iperf'
 # brew 'iperf3'
 brew 'jq'        # JSON
-# brew 'lame'
 brew 'nkf'       # Network Kanji Filter
-brew 'oci-cli'
 brew 'openssl'
-brew 'postgresql'
 brew 'qemu'
-# brew 'shntool'
 brew 'tmux'
 brew 'tmux-xpanes'
 brew 'python-yq' # Yaml
 brew 'watchman'  # Watching changes in the filesystem
 brew 'xz'        # Compress or decompress
-brew 'youtube-dl'
 brew 'zsh'
-
-# React Native
-tap 'facebook/fb'
-brew 'idb-companion'
-
-# Heroku
-# tap 'heroku/brew'
-# brew 'heroku'
 
 # Cask
 cask 'alfred'
-cask 'authy'
 cask 'discord'
-# cask 'calibre'
 cask 'figma'
 cask 'firefox'
-cask 'flipper'
 cask 'fork'
 cask 'google-chrome'
 cask 'google-drive'
-cask 'google-japanese-ime'
+# cask 'google-japanese-ime'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'kindle'
 # cask 'multipass'
 cask 'ngrok'
 cask 'notion'
-# cask 'osxfuse'
 cask 'paw'
-cask 'reactotron'
-# cask 'rescuetime'
 cask 'slack'
-# cask 'teamviewer'
 cask 'tunnelblick'
-cask 'veracrypt'
 cask 'visual-studio-code'
 cask 'vlc'
-# cask 'xquartz'
-cask 'yacreader'
 cask 'zoom'
 cask 'homebrew/cask-versions/docker-edge'
 
