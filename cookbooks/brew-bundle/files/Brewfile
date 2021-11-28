@@ -1,3 +1,4 @@
+brew 'anyenv'
 # brew 'autoconf'
 # brew 'automake'
 brew 'awscli'
@@ -10,7 +11,7 @@ brew 'fzf'       # command-line fuzzy finder
 brew 'ghq'
 brew 'git'
 brew 'git-lfs'
-# brew 'graphviz'  # Graph Visualization
+brew 'graphviz'  # Graph Visualization
 brew 'htop'
 # brew 'iperf'
 # brew 'iperf3'
@@ -35,15 +36,15 @@ tap 'facebook/fb'
 brew 'idb-companion'
 
 # Heroku
-tap 'heroku/brew'
-brew 'heroku'
+# tap 'heroku/brew'
+# brew 'heroku'
 
 # Cask
 cask 'alfred'
 cask 'authy'
 cask 'discord'
 # cask 'calibre'
-cask 'docker-edge'
+cask 'figma'
 cask 'firefox'
 cask 'flipper'
 cask 'fork'
@@ -56,31 +57,26 @@ cask 'kindle'
 # cask 'multipass'
 cask 'ngrok'
 cask 'notion'
-cask 'osxfuse'
+# cask 'osxfuse'
 cask 'paw'
 cask 'reactotron'
 # cask 'rescuetime'
-cask 'sequel-pro-nightly'
 cask 'slack'
-cask 'tableplus'
 # cask 'teamviewer'
-# cask 'tunnelblick'
+cask 'tunnelblick'
 cask 'veracrypt'
 cask 'visual-studio-code'
 cask 'vlc'
 # cask 'xquartz'
 cask 'yacreader'
 cask 'zoom'
+cask 'homebrew/cask-versions/docker-edge'
 
 # App Store
 brew 'mas'
-mas 'Bitwarden', id: 1352778147
 mas 'LINE', id: 539883307
 mas 'Magnet', id: 441258766
-mas 'Microsoft Word', id: 462054704
-mas 'Microsoft Excel', id: 462058435
-mas 'Microsoft PowerPoint', id: 462062816
-mas 'Microsoft OneNote', id: 784801555
+mas 'Sequel Ace', id: 1518036000
 mas 'tailscale', id: 1475387142
 mas 'The Unarchiver', id: 425424353
 mas 'TweetDeck', id: 485812721

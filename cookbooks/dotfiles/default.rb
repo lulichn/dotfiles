@@ -5,4 +5,3 @@ end
 dotfile '.config/git'
 dotfile '.tmux.conf'
 dotfile '.vimrc'
-dotfile '.config/karabiner'
