@@ -62,6 +62,12 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
 
+# Homebrew
+if [ -d /opt/homebrew/bin/brew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # pyenv
