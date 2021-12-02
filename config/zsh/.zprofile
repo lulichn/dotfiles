@@ -76,3 +76,6 @@ if [ -d $HOME/.anyenv/envs/pyenv ]; then
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init --path)"
 fi
+
+# Lima
+export DOCKER_HOST=ssh://limadocker:60006

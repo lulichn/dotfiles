@@ -6,8 +6,7 @@ include_cookbook 'brew'
 # include_cookbook 'brew-bundle'
 # include_cookbook 'tmux'
 # include_cookbook 'dotfiles'
-# include_cookbook 'git'
-
+include_cookbook 'git'
 include_cookbook 'anyenv'
 include_cookbook 'java'
 
