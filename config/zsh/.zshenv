@@ -15,11 +15,14 @@ path=(
   $HOME/bin(N-/)
   $HOME/.anyenv/envs/nodenv/shims(N-/)
   $HOME/.yarn/bin(N-/)
+  $HOME/.local/bin(N-/)
   $HOME/.config/yarn/global/node_modules/.bin(N-/)
   $HOME/bin/flutter/bin(N-/)
+  $HOME/go/bin(N-/)
   $path
 )
 
 [ -f $ZDOTDIR/.zshenv_`uname` ] && source $ZDOTDIR/.zshenv_`uname`
 [ -f $HOME/works/.zsh/zshenv_local ] && source $HOME/works/.zsh/zshenv_local
 
+. "$HOME/.cargo/env"

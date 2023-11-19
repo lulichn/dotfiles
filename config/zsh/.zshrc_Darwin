@@ -4,3 +4,6 @@ if [ -d /usr/local/opt/coreutils/libexec/gnubin ]; then
   alias readlink='greadlink'
 fi
 
+# https://github.com/rails/rails/issues/38560
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+

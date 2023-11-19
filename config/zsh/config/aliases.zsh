@@ -4,6 +4,8 @@ alias g="git"
 alias gs="git status"
 alias gd="git diff"
 
+alias tf="terraform"
+
 if (( $+commands[docker] )); then
   alias d='docker'
   alias ddps='docker ps --format "{{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Command}}\t{{.RunningFor}}"'

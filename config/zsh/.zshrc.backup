@@ -26,11 +26,6 @@ export FZF_DEFAULT_OPTS="--layout=reverse"
 
 ############################################################
 
-# direnv
-(($+commands[direnv])) && eval "$(direnv hook zsh)"
-
-############################################################
-
 # functions
 FPATH=$FPATH:$ZDOTDIR/functions
 autoload -U ssh-ec2
@@ -88,12 +83,6 @@ for i in $ZDOTDIR/config/*.zsh; do
   source $i
 done
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/daisukh/dev/libs/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/daisukh/dev/libs/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/daisukh/dev/libs/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/daisukh/dev/libs/google-cloud-sdk/completion.zsh.inc'; fi
-
 ############################################################
 
 ##
@@ -102,3 +91,4 @@ if [ -f '/Users/daisukh/dev/libs/google-cloud-sdk/completion.zsh.inc' ]; then . 
 # if (which zprof > /dev/null) ;then
 #   zprof | less
 # fi
+

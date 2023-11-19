@@ -68,7 +68,6 @@ if [ -x /opt/homebrew/bin/brew ]; then
 fi
 
 # cargo
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # pyenv
 if [ -d $HOME/.anyenv/envs/pyenv ]; then
@@ -78,4 +77,4 @@ if [ -d $HOME/.anyenv/envs/pyenv ]; then
 fi
 
 # Lima
-export DOCKER_HOST=ssh://limadocker:60006
+# export DOCKER_HOST=ssh://limadocker:60006

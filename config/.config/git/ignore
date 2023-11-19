@@ -22,6 +22,8 @@
 .idea/**/dbnavigator.xml
 .idea/**/gradle.xml
 .idea/**/libraries
+## idea全体を無視する
+.idea
 
 # VS Code
 .vscode/
@@ -31,4 +33,10 @@
 
 .bundle/
 vendor/
+
+.envrc
+.env
+
+.yarn/
+.yarnrc
 
