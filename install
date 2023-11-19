@@ -1,0 +1,33 @@
+#!/bin/sh
+
+repo_url="https://github.com/lulichn/dotfiles.git"
+dest="$HOME/dotfiles"
+
+check_and_install_xcode()
+{
+  if (xcode-select -p > /dev/null; test $? -ne 0); then
+    xcode-select --install
+  fi
+}
+
+clone()
+{
+  if [ -d $dest ]; then
+    cd $dest
+    git fetch
+    git reset --hard origin/main
+  else
+    git clone $repo_url $dest
+    cd $dest
+  fi
+}
+
+case "$(uname)" in
+  "Darwin")
+  check_and_install_xcode
+  clone
+  ;;
+  *)
+  clone
+  ;;
+esac

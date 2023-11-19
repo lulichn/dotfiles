@@ -1,0 +1,9 @@
+import = [
+  "~/dotfiles/config/alacritty/pastel_dark.toml",
+]
+
+[window]
+padding = { x = 5, y = 5 }
+
+opacity = 0.60
+blur = true

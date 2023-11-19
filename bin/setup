@@ -1,0 +1,90 @@
+#!/bin/sh
+
+# MItamae
+# https://github.com/itamae-kitchen/mitamae
+
+#base_url="https://github.com/itamae-kitchen/mitamae/releases/download/"
+repo="itamae-kitchen/mitamae"
+simple="mitamae"
+
+cd `dirname $0`
+
+usage()
+{
+	cat <<EOF
+Usage:
+    $(basename ${0}) [command]
+
+Available Commands
+
+    install   - Install
+
+    uninstall - Uninstall
+EOF
+}
+
+get_bin()
+{
+	uname=$(uname)
+	arch=$(uname -m)
+
+	if [ "$uname" = "Darwin" -a "$arch" = "x86_64" ]; then
+		bin="mitamae-x86_64-darwin"
+	elif [ "$uname" = "Darwin" -a "$arch" = "arm64" ]; then
+		bin="mitamae-aarch64-darwin"
+	elif [ "$uname" = "Linux" ]; then
+		bin="mitamae-x86_64-linux"
+	fi
+}
+
+get_version()
+{
+	version=$(curl -s "https://api.github.com/repos/$repo/releases/latest" | grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')
+	echo "Current latest version: $version"
+}
+
+download()
+{
+	mitamae="$simple-$version"
+
+	echo "Download $mitamae"
+	curl -sSfL "https://github.com/$repo/releases/download/$version/$bin.tar.gz" | tar xz
+
+	mv $bin $mitamae
+	
+	echo "Create link $mitamae to $simple"
+	ln -f -s $mitamae $simple
+}
+
+check_exists()
+{
+	mitamae="$simple-$version"
+	if [ -e "$mitamae" ]; then
+		echo "Latest version already exists."
+		exit 0;
+	fi
+}
+
+clean()
+{
+	unlink $simple
+	rm -f $simple-*
+}
+
+case ${1} in
+	install)
+		get_bin
+		get_version
+
+		check_exists
+
+		download
+	;;
+	uninstall)
+		clean
+	;;
+	*)
+		usage
+		exit 1
+	;;
+esac

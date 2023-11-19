@@ -1,0 +1,11 @@
+# sorin theme
+# https://github.com/zimfw/sorin
+zmodule prompt-pwd
+zmodule git-info
+zmodule sorin
+
+zmodule zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-autosuggestions
+
+# fasd
+zmodule fasd

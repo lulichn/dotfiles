@@ -1,0 +1,9 @@
+[user]
+	name = Daisuke Higashi
+	email = daisuke.mik@gmail.com
+
+[push]
+	default = current
+
+[ghq]
+	root = ~/dev/src

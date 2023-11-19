@@ -1,0 +1,30 @@
+declare -A ZPLGM
+ZPLGM[HOME_DIR]=$HOME/.zsh/zplugin
+ZPLGM[BIN_DIR]=${ZPLGM[HOME_DIR]}/bin
+source ${ZPLGM[HOME_DIR]}/bin/zplugin.zsh
+
+autoload -Uz _zplugin
+(( ${+_comps} )) && _comps[zplugin]=_zplugin
+
+#  -----------------------
+
+zplugin ice svn wait"0" lucid
+zplugin snippet PZT::modules/utility
+
+zplugin ice svn wait"0" lucid
+zplugin snippet PZT::modules/completion
+
+zplugin ice svn lucid
+zplugin snippet PZT::modules/history
+
+zplugin ice wait"0" svn lucid
+zplugin snippet PZT::modules/git
+
+zstyle ':prezto:module:prompt' theme 'sorin'
+
+zplugin load mafredri/zsh-async  # dependency
+zplugin ice svn silent atload'prompt sorin'
+zplugin snippet PZT::modules/prompt
+
+zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:git:alias' skip 'yes'

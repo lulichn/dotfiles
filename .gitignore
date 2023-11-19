@@ -1,0 +1,12 @@
+bin/mitamae*
+
+cookbooks/brew/files/*.lock.json
+
+config/zsh/prezto/
+config/zsh/fasd
+config/zsh/fasd.*
+config/zsh/.zcompdump*
+config/zsh/.zlogin
+config/zsh/.zlogout
+config/zsh/.zsh_sessions
+config/zsh/.zsh_history
