@@ -1,6 +1,6 @@
-#
-# environment variables for Darwin.
-#
+# ------------
+# For Darwin
+# ------------
 
 # Python, pip
 path=(

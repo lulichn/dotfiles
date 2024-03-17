@@ -47,16 +47,13 @@ bindkey '^q' ghq-fzf
 
 ############################################################
 
+# mise
+# eval "$(mise activate zsh)"
+
 # anyenv
 if [ -d $HOME/.anyenv ]; then
   export PATH="$HOME/.anyenv/bin:$PATH"
   eval "$(anyenv init - --no-rehash)"
-fi
-
-# sdkman
-if [ -d $HOME/.sdkman ]; then
-  export SDKMAN_DIR="$HOME/.sdkman"
-  source "$SDKMAN_DIR/bin/sdkman-init.sh"
 fi
 
 # Cargo
@@ -81,7 +78,7 @@ fi
 
 ############################################################
 
-[ -f $ZDOTDIR/.zshrc_`uname` ] && source $ZDOTDIR/.zshrc_`uname`
+[ -f $ZDOTDIR/.zshrc.`uname` ] && source $ZDOTDIR/.zshrc.`uname`
 
 # config
 for i in $ZDOTDIR/config/*.zsh; do

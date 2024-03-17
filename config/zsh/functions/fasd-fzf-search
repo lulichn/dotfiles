@@ -11,4 +11,3 @@ if [ -n "$res" ]; then
 else
   return 1
 fi
-

@@ -16,6 +16,7 @@ brew 'jsonnet'
 brew 'kayac/tap/ecspresso'
 brew 'libssh2'
 brew 'libyaml'
+brew 'mise'
 brew 'nkf'       # Network Kanji Filter
 brew 'openssl'
 brew 'postgresql'
@@ -24,6 +25,7 @@ brew 'ripgrep'
 brew 'Songmu/tap/ecschedule'
 brew 'tmux'
 brew 'watchman'  # Watching changes in the filesystem
+brew 'wget'
 brew 'xz'        # Compress or decompress
 # brew 'yq'        # Yaml
 brew 'zsh'

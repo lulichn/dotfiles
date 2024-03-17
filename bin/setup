@@ -7,8 +7,6 @@
 repo="itamae-kitchen/mitamae"
 simple="mitamae"
 
-
-
 cd `dirname $0`
 
 usage()
@@ -90,4 +88,3 @@ case ${1} in
 		exit 1
 	;;
 esac
-

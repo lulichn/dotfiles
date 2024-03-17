@@ -7,14 +7,17 @@ include_recipe 'mac_defaults'
 defaults '-g AppleKeyboardUIMode' do
   value 3
 end
+
 ## キーリピート 1=15ms
 defaults '-g KeyRepeat' do
   value 2
 end
+
 ## リピート入力認識までの時間 1=15ms
 defaults '-g InitialKeyRepeat' do
   value 15
 end
+
 ## Move focus to the next window in application - Option + Tab
 # plist 'Disable Spotlight hotkey' do
 #   file '~/Library/Preferences/com.apple.symbolichotkeys.plist'
@@ -29,9 +32,14 @@ plist 'Disable Spotlight hotkey' do
   key ':AppleSymbolicHotKeys:64:enabled'
   value false
 end
+
 plist 'Disable Spotlight hotkey' do
   file '~/Library/Preferences/com.apple.symbolichotkeys.plist'
   key ':AppleSymbolicHotKeys:65:enabled'
+  value false
+end
+
+defaults 'kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled' do
   value false
 end
 
@@ -66,10 +74,12 @@ end
 defaults 'com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture' do
   value 1
 end
+
 # 軌跡の速さ
 defaults '-g com.apple.trackpad.scaling' do
   value 2.5
 end
+
 # スクロール方向: ナチュラル [無効]
 defaults '-g com.apple.swipescrolldirection' do
   value false
@@ -90,6 +100,7 @@ end
 defaults 'com.apple.finder ShowTabView' do
   value true
 end
+
 defaults 'com.apple.finder ShowStatusBar' do
   value true
 end
@@ -131,6 +142,7 @@ end
 defaults 'com.apple.dock wvous-br-corner' do
   value 10
 end
+
 defaults 'com.apple.dock wvous-br-modifier' do
   value 0
 end
@@ -139,9 +151,11 @@ end
 defaults 'com.apple.screencapture disable-shadow' do
   value true
 end
+
 defaults 'com.apple.screencapture name' do
   value "SS"
 end
+
 defaults 'com.apple.screencapture show-thumbnail' do
   value false
 end
@@ -152,9 +166,12 @@ end
 defaults 'com.apple.Siri StatusMenuVisible' do
   value false
 end
+
 defaults 'com.apple.Siri UserHasDeclinedEnable' do
   value true
 end
+
 defaults 'com.apple.assistant.support \'Assistant Enabled\'' do
   value false
 end
+

@@ -1,4 +1,6 @@
-# zsh configure for Linux
+# ------------
+# For Linux
+# ------------
 
 export BROWSER=/usr/bin/google-chrome-stable
 
